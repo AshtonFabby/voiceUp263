@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:voice_up/splash_screen.dart';
 
 import 'logged_in.dart';
 
@@ -21,11 +22,19 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.topRight,
+          SizedBox(height: 40,),
+          Center(
+            child: Text(
+              "Voice Up 263",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              // textAlign: TextAlign.justify
+            ),
+          ),
+          const SizedBox(height: 100,),
+          Center(
             child: Image.asset(
-              'assets/images/houses.jpg',
-              width: 252,
+              'assets/images/people.png',
+              height: 150,
             ),
           ),
 
@@ -33,25 +42,17 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
-                const Align(
-                  alignment: Alignment.topLeft,
-                  child: Text(
-                    "Voice Up",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-                    // textAlign: TextAlign.justify
-                  ),
-                ),
                 const SizedBox(
                   height: 20,
                 ),
                 const Align(
                   alignment: Alignment.topLeft,
                   child: Text(
-                    "Sign in",
+                    "Get started to interact with your Parliament, Ministry of information and Urban Councils.",
                     style: TextStyle(fontSize: 20, color: Colors.grey),
                   ),
                 ),
-                const SizedBox(height: 260,),
+                const SizedBox(height: 140,),
                 SizedBox(
                   width: double.infinity,
                   height: 50,
@@ -102,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
     //       (Route<dynamic> route) => false,
     // );
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const LoggedIn()));
+        context, MaterialPageRoute(builder: (context) => const SplashScreen()));
     // Once signed in, return the UserCredential
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }

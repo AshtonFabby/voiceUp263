@@ -25,7 +25,7 @@ class ChatItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    print(title);
     CollectionReference messages = FirebaseFirestore.instance.collection(title);
 
     return Scaffold(
