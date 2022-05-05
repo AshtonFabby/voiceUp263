@@ -41,7 +41,8 @@ class _SplashScreenState extends State<SplashScreen> {
             height: 30,
           ),
           Text(
-            "A platform for information sharing \nand inclusive participation \nin budgeting affairs",
+            // "A platform for information sharing \n and inclusive participation \nin budgeting affairs",
+            "Get started to interact with your \nurban councils",
             style: TextStyle(color: Colors.black54, height: 1.5, fontSize: 18),
             textAlign: TextAlign.center,
           ),

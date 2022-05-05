@@ -22,7 +22,7 @@ class LocalAuthorities extends StatelessWidget {
                 leading: Image.asset(
                     "assets/images/Harare.png" /*+ data['image']*/),
                 title: Text(
-                  "Harare",
+                  "City of Harare",
                   style: TextStyle(color: Colors.grey,
                     fontWeight: FontWeight.bold,
                   ),
@@ -46,7 +46,7 @@ class LocalAuthorities extends StatelessWidget {
                 leading: Image.asset(
                     "assets/images/Bulawayo.png" /*+ data['image']*/),
                 title: Text(
-                  "Bulawayo",
+                  "City of Bulawayo",
                   style: TextStyle(color: Colors.grey,
                     fontWeight: FontWeight.bold,
                   ),
@@ -67,15 +67,15 @@ class LocalAuthorities extends StatelessWidget {
               ),
               ListTile(
                 leading: Image.asset(
-                    "assets/images/Gweru.png" /*+ data['image']*/),
+                    "assets/images/Mutare.png" /*+ data['image']*/),
                 title: Text(
-                  "Gweru",
+                  "City of Mutare",
                   style: TextStyle(color: Colors.grey,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 subtitle: Text(
-                  "Gweru City Council feed",
+                  "Mutare City Council feed",
                   style: TextStyle(color: Colors.grey),
                 ),
                 onTap: () {
@@ -83,7 +83,7 @@ class LocalAuthorities extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => CityFeed(
-                            title: "Gweru",
+                            title: "Mutare",
                           )));
                   // print("thing tapped");
                 },
@@ -91,15 +91,15 @@ class LocalAuthorities extends StatelessWidget {
 
               ListTile(
                 leading: Image.asset(
-                    "assets/images/Kadoma.png" /*+ data['image']*/),
+                    "assets/images/Chitungwiza.png" /*+ data['image']*/),
                 title: Text(
-                  "Kadoma",
+                  "City of Chitungwiza",
                   style: TextStyle(color: Colors.grey,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 subtitle: Text(
-                  "Kadoma Town Council feed",
+                  "Chitungwiza Town Council feed",
                   style: TextStyle(color: Colors.grey),
                 ),
                 onTap: () {
@@ -107,7 +107,30 @@ class LocalAuthorities extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => CityFeed(
-                            title: "Kadoma",
+                            title: "Chitungwiza",
+                          )));
+                  // print("thing tapped");
+                },
+              ),
+              ListTile(
+                leading: Image.asset(
+                    "assets/images/Shurugwi.png" /*+ data['image']*/),
+                title: Text(
+                  "City of Shurugwi",
+                  style: TextStyle(color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                subtitle: Text(
+                  "Shurugwi Town Council feed",
+                  style: TextStyle(color: Colors.grey),
+                ),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CityFeed(
+                            title: "Shurugwi",
                           )));
                   // print("thing tapped");
                 },

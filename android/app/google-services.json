@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "99065080076-2qu3j8ngg0ffvv2pbod85uv9bq5he9k2.apps.googleusercontent.com",
+          "client_id": "99065080076-15d4h4g02l509nesjbttc9t3aq638ol6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.digitalvague.voice_up",
-            "certificate_hash": "c716dddbf7c43a5753577a2e7199c7fc0046068c"
+            "certificate_hash": "986a6a8557ca5c3b6ab182efe77342a513073404"
           }
         },
         {
